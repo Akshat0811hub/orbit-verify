@@ -2,48 +2,294 @@
 <html lang="en">
 
 <head>
+    <!-- Basic Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OrbitVerify</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Website Title -->
+    <title>OrbitVerify | Employee & Business Background Verification</title>
+
+    <!-- SEO Meta -->
+    <meta name="description"
+        content="OrbitVerify provides reliable Employee Background Verification and Business Verification services to help organizations build a trusted and secure workforce.">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#071B49">
+
+    <!-- Favicon / Website Icon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
     <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="src/css/output.css">
+    <link rel="stylesheet" href="/src/css/output.css">
+
 </head>
+
 
 <body>
 
-    <header class="bg-white shadow-md">
-        <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+    <!-- Header -->
+    <header class="w-full py-2.5 bg-white border-b border-gray-100 sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="/" class="shrink-0">
+                <img src="/src/images/logo.svg" alt="OrbitVerify Logo" width="123" height="82">
+            </a>
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center gap-7 xl:gap-8">
+                <a href="/" class="text-[#2BC76B] font-semibold text-[18px]">
+                    Home
+                </a>
+                <a href="/about"
+                    class="text-[#162344] font-semibold text-[18px] hover:text-[#2BC76B] transition-colors">
+                    About Us
+                </a>
+                <a href="/industries"
+                    class="text-[#162344] font-semibold text-[18px] hover:text-[#2BC76B] transition-colors">
+                    Industries
+                </a>
+                <a href="/employee-bgv"
+                    class="text-[#162344] font-semibold text-[18px] hover:text-[#2BC76B] transition-colors">
+                    Employee BGV
+                </a>
+                <a href="/business-bgv"
+                    class="text-[#162344] font-semibold text-[18px] hover:text-[#2BC76B] transition-colors">
+                    Business BGV
+                </a>
 
-            <h1 class="text-2xl font-bold text-blue-900">
-                OrbitVerify
-            </h1>
+            </nav>
 
-            <div class="flex gap-6">
-                <a href="#" class="hover:text-blue-600">Home</a>
-                <a href="about.html" class="hover:text-blue-600">About</a>
-                <a href="contact.html" class="hover:text-blue-600">Contact</a>
+            <!-- Desktop Buttons -->
+            <div class="hidden lg:flex items-center gap-4">
+
+                <a href="/login" class="h-[48px] min-w-[96px] px-6 flex items-center justify-center
+                           border border-[#2BC76B] rounded-lg
+                           text-[#162344] font-semibold
+                           hover:bg-[#2BC76B] hover:text-white
+                           transition-all duration-300">
+                    Login
+                </a>
+
+                <a href="/contact" class="h-[48px] min-w-[152px] px-6 flex items-center justify-center
+                           bg-[#2BC76B] rounded-lg
+                           text-[#162344] font-semibold
+                           hover:bg-[#20A957] transition-all duration-300">
+                    Contact Us
+                </a>
+
             </div>
 
-        </nav>
+            <!-- Mobile Menu Button -->
+            <button id="menuButton" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="mobileMenu" class="lg:hidden flex flex-col justify-center items-center
+                       w-11 h-11 gap-[6px] rounded-md
+                       border border-gray-200">
+                <span class="w-6 h-[2px] bg-[#17294D]"></span>
+                <span class="w-6 h-[2px] bg-[#17294D]"></span>
+                <span class="w-6 h-[2px] bg-[#17294D]"></span>
+            </button>
+
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-gray-100 bg-white">
+
+            <nav class="max-w-[1200px] mx-auto px-5 py-5 flex flex-col gap-5">
+
+                <a href="/" class="text-[#25C46A] font-semibold">Home</a>
+
+                <a href="/about" class="text-[#17294D] font-semibold">About Us</a>
+
+                <a href="/industries" class="text-[#17294D] font-semibold">Industries</a>
+
+                <a href="/employee-bgv" class="text-[#17294D] font-semibold">Employee BGV</a>
+
+                <a href="/business-bgv" class="text-[#17294D] font-semibold">Business BGV</a>
+
+                <div class="flex flex-col sm:flex-row gap-3 pt-2">
+
+                    <a href="/login" class="h-12 flex items-center justify-center border border-[#25C46A]
+                               rounded-lg text-[#17294D] font-semibold">
+                        Login
+                    </a>
+
+                    <a href="/contact" class="h-12 flex items-center justify-center bg-[#25C46A]
+                               rounded-lg text-[#17294D] font-semibold">
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </div>
+
     </header>
 
-    <main class="max-w-7xl mx-auto px-6 py-20">
+    <main class="relative">
+        <section class="hero-section relative text-center bg-linear-to-r from-[#F0F2F7] via-[#ECF1FA] to-[#E9FAF0]
+                py-6 lg:py-6">
+            <div class="container mx-auto px-4">
 
-        <h2 class="text-5xl font-bold text-blue-950">
-            Background Verification Solutions
-        </h2>
+                <div class="grid grid-cols-1 md:grid-cols-[35%_65%]">
+                    <div class="relative text-left text-[#101B34]">
+                        <h1 class="text-[80px] font-bold leading-24">Build Trust. </h1>
+                        <h4 class="text-4xl font-medium italic"> Verify with confidence.</h4>
+                        <button class="mt-12 h-[48px] cursor-pointer min-w-[152px] px-6 flex items-center justify-center
+                           bg-[#2BC76B] rounded-lg
+                           text-[#162344] font-semibold
+                           hover:bg-[#20A957] transition-all duration-300">
+                            Request a consultation
+                        </button>
+                    </div>
 
-        <p class="mt-5 text-gray-600 text-lg">
-            Reliable Employee and Business Verification Services.
-        </p>
+                    <div class="verification-art">
 
-        <button class="mt-8 bg-blue-900 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">
-            Get Started
-        </button>
+                        <!-- Background circles -->
+                        <div class="circle circle-outer">
+                            <div class="circle circle-middle">
+                                <div class="circle circle-inner"></div>
+                            </div>
+                        </div>
 
+                        <!-- Star -->
+                        <div class="star-decoration">
+                            <img src="src/images/stars-blink.svg" alt="Star Decoration"
+                                class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- Candidate profile card -->
+                        <div class="profile-card">
+
+                            <!-- Header -->
+                            <div class="profile-dash flex items-center justify-between">
+
+                                <div class="text-left">
+                                    <p class="text-[11px] font-medium uppercase tracking-wide text-[#667BA8]">
+                                        VERIFICATION OVERVIEW
+                                    </p>
+
+                                    <h2 class="text-[20px] leading-[22px] font-semibold text-[#162344]">
+                                        Candidate profile
+                                    </h2>
+                                </div>
+
+                                <span
+                                    class="flex items-center font-semibold gap-2 rounded-full bg-[#E9FAF0] px-2 leading-4 text-[10px] text-[#20A957]">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-[#20A957]"></span>
+                                    Verified
+                                </span>
+
+                            </div>
+
+                            <!-- Candidate information -->
+                            <div class="flex items-center justify-between py-4.5">
+
+                                <div class="flex items-center gap-2">
+
+                                    <!-- Avatar -->
+                                    <div class="profile-avatar flex items-end justify-center">
+                                        <img src="src/images/profile-circle.svg" alt="Candidate Avatar"
+                                            class="w-full h-full object-cover rounded-full">
+                                    </div>
+
+                                    <div class="text-left">
+                                        <h3 class="text-lg font-bold text-[#162344]">
+                                            Rahul Sharma
+                                        </h3>
+                                        <p class="text-sm text-[#667BA8]">
+                                            Product Operation - 2048
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="text-[#20A957] whitespace-nowrap">
+                                    <span class="text-[22px] font-bold">98</span><span
+                                        class="text-[12px] font-semibold text-[#162344]">/100</span>
+                                </div>
+
+                            </div>
+
+                            <!-- Progress -->
+                            <div class="progress-track">
+                                <div class="progress-fill"></div>
+                            </div>
+
+                            <!-- Verification list -->
+                            <div class="mt-4.5 space-y-3.5">
+                                <!-- Item 1 -->
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <img src="src/images/identity-check.svg" alt="Identity Check Icon"
+                                            class="w-[22px] h-[22px]">
+                                        <span class="text-sm font-medium text-[#4A6297]">
+                                            Identity Check
+                                        </span>
+                                    </div>
+
+                                    <span class="relative">
+                                        <img src="src/images/check_circle.svg" alt="Verified Icon" class="w-4 h-4">
+                                    </span>
+                                </div>
+
+                                <!-- Item 2 -->
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <img src="src/images/education-check.svg"
+                                            alt="Education & Employment Checks Icon" class="w-[22px] h-[22px]">
+                                        <span class="text-sm font-medium text-[#4A6297]">
+                                            Education & Employment Checks
+                                        </span>
+                                    </div>
+
+                                    <span class="relative">
+                                        <img src="src/images/check_circle.svg" alt="Verified Icon" class="w-4 h-4">
+                                    </span>
+                                </div>
+
+                                <!-- Item 3 -->
+
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <img src="src/images/criminal-check.svg"
+                                            alt="Criminal Background Checks Icon" class="w-[22px] h-[22px]">
+                                        <span class="text-sm font-medium text-[#4A6297]">
+                                            Criminal Background Checks
+                                        </span>
+                                    </div>
+
+                                    <span class="relative">
+                                        <img src="src/images/check_circle.svg" alt="Verified Icon" class="w-4 h-4">
+                                    </span>
+                                </div>                            </div>
+
+                        </div>
+
+                        <!-- Floating card 1 -->
+                        <div class="floating-card floating-one">
+                            <div class="floating-icon">
+                                <img src="src/images/trust-verified.svg" alt="Verified Icon" class="w-6 h-6">
+                            </div>
+                            <div>
+                                <p class="text-[14px] leading-3.5 font-bold text-[#162344] whitespace-nowrap">
+                                    Trust, verified
+                                </p>
+                                <p class="text-[10px] text-[#626468] whitespace-nowrap">
+                                    Every detail matters
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <script src="./src/js/main.js"></script>
-
 </body>
+
 </html>
