@@ -65,11 +65,12 @@ body {
     height: 330px;
     left: 50%;
     top: 50%;
-    background-image: url("../images/inner-ring.svg");
-    background-size: cover;
+    background-image: url("../images/half-ring.svg");
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     transform: translate(-50%, -50%);
+    animation: rotateAntiClockwise 6s linear infinite;
 }
 
 @keyframes rotateClockwise {
@@ -81,15 +82,20 @@ body {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+@keyframes rotateAntiClockwise {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
 
+    to {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
 
 
 /* Main profile card */
 .profile-card {
-    position: absolute;
     z-index: 5;
-    left: 8.6%;
-    top: 16%;
     width: 380px;
     min-height: 222px;
     padding: 24px 20px;
@@ -126,10 +132,9 @@ body {
     background: linear-gradient(90deg, #20A957, #162344);
 }
 
-/* Floating cards */.floating-card {
-    position: absolute;
+.floating-card {
+    width: 180px;
     z-index: 6;
-    left: 68.8%;
     padding: 12px 16px;
     display: flex;
     align-items: center;
@@ -139,13 +144,6 @@ body {
     box-shadow: 0 5px 14px rgba(65, 107, 170, 0.16);
 }
 
-.floating-one {
-    top: 26.5%;
-}
-
-.floating-two {
-    top: 47.5%;
-}
 
 .floating-icon {
     width: 40px;

@@ -131,8 +131,8 @@
                 py-6 lg:py-6">
             <div class="container mx-auto px-4">
 
-                <div class="grid grid-cols-1 md:grid-cols-[35%_65%]">
-                    <div class="relative text-left text-[#101B34]">
+                <div class="grid grid-cols-1 md:grid-cols-[45%_55%]">
+                    <div class="relative text-left text-[#101B34] flex flex-col justify-center items-start">
                         <h1 class="text-[80px] font-bold leading-24">Build Trust. </h1>
                         <h4 class="text-4xl font-medium italic"> Verify with confidence.</h4>
                         <button class="mt-12 h-[48px] cursor-pointer min-w-[152px] px-6 flex items-center justify-center
@@ -158,126 +158,144 @@
                                 class="w-full h-full object-cover">
                         </div>
 
-                        <!-- Candidate profile card -->
-                        <div class="profile-card">
+                        <div class="flex gap-4 top-1/2 transform -translate-y-1/2 items-center justify-center relative z-10">
+                            <!-- Candidate profile card -->
+                            <div class="profile-card">
 
-                            <!-- Header -->
-                            <div class="profile-dash flex items-center justify-between">
-
-                                <div class="text-left">
-                                    <p class="text-[11px] font-medium uppercase tracking-wide text-[#667BA8]">
-                                        VERIFICATION OVERVIEW
-                                    </p>
-
-                                    <h2 class="text-[20px] leading-[22px] font-semibold text-[#162344]">
-                                        Candidate profile
-                                    </h2>
-                                </div>
-
-                                <span
-                                    class="flex items-center font-semibold gap-2 rounded-full bg-[#E9FAF0] px-2 leading-4 text-[10px] text-[#20A957]">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-[#20A957]"></span>
-                                    Verified
-                                </span>
-
-                            </div>
-
-                            <!-- Candidate information -->
-                            <div class="flex items-center justify-between py-4.5">
-
-                                <div class="flex items-center gap-2">
-
-                                    <!-- Avatar -->
-                                    <div class="profile-avatar flex items-end justify-center">
-                                        <img src="src/images/profile-circle.svg" alt="Candidate Avatar"
-                                            class="w-full h-full object-cover rounded-full">
-                                    </div>
+                                <!-- Header -->
+                                <div class="profile-dash flex items-center justify-between">
 
                                     <div class="text-left">
-                                        <h3 class="text-lg font-bold text-[#162344]">
-                                            Rahul Sharma
-                                        </h3>
-                                        <p class="text-sm text-[#667BA8]">
-                                            Product Operation - 2048
+                                        <p class="text-[11px] font-medium uppercase tracking-wide text-[#667BA8]">
+                                            VERIFICATION OVERVIEW
+                                        </p>
+
+                                        <h2 class="text-[20px] leading-[22px] font-semibold text-[#162344]">
+                                            Candidate profile
+                                        </h2>
+                                    </div>
+
+                                    <span
+                                        class="flex items-center font-semibold gap-2 rounded-full bg-[#E9FAF0] px-2 leading-4 text-[10px] text-[#20A957]">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-[#20A957]"></span>
+                                        Verified
+                                    </span>
+
+                                </div>
+
+                                <!-- Candidate information -->
+                                <div class="flex items-center justify-between py-4.5">
+
+                                    <div class="flex items-center gap-2">
+
+                                        <!-- Avatar -->
+                                        <div class="profile-avatar flex items-end justify-center">
+                                            <img src="src/images/profile-circle.svg" alt="Candidate Avatar"
+                                                class="w-full h-full object-cover rounded-full">
+                                        </div>
+
+                                        <div class="text-left">
+                                            <h3 class="text-lg font-bold text-[#162344]">
+                                                Rahul Sharma
+                                            </h3>
+                                            <p class="text-sm text-[#667BA8]">
+                                                Product Operation - 2048
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="text-[#20A957] whitespace-nowrap">
+                                        <span class="text-[22px] font-bold">98</span><span
+                                            class="text-[12px] font-semibold text-[#162344]">/100</span>
+                                    </div>
+
+                                </div>
+
+                                <!-- Progress -->
+                                <div class="progress-track">
+                                    <div class="progress-fill"></div>
+                                </div>
+
+                                <!-- Verification list -->
+                                <div class="mt-4.5 space-y-3.5">
+                                    <!-- Item 1 -->
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center gap-3">
+                                            <img src="src/images/identity-check.svg" alt="Identity Check Icon"
+                                                class="w-[22px] h-[22px]">
+                                            <span class="text-sm font-medium text-[#4A6297]">
+                                                Identity Check
+                                            </span>
+                                        </div>
+
+                                        <span class="relative">
+                                            <img src="src/images/check_circle.svg" alt="Verified Icon" class="w-4 h-4">
+                                        </span>
+                                    </div>
+
+                                    <!-- Item 2 -->
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center gap-3">
+                                            <img src="src/images/education-check.svg"
+                                                alt="Education & Employment Checks Icon" class="w-[22px] h-[22px]">
+                                            <span class="text-sm font-medium text-[#4A6297]">
+                                                Education & Employment Checks
+                                            </span>
+                                        </div>
+
+                                        <span class="relative">
+                                            <img src="src/images/check_circle.svg" alt="Verified Icon" class="w-4 h-4">
+                                        </span>
+                                    </div>
+
+                                    <!-- Item 3 -->
+
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center gap-3">
+                                            <img src="src/images/criminal-check.svg"
+                                                alt="Criminal Background Checks Icon" class="w-[22px] h-[22px]">
+                                            <span class="text-sm font-medium text-[#4A6297]">
+                                                Criminal Background Checks
+                                            </span>
+                                        </div>
+
+                                        <span class="relative">
+                                            <img src="src/images/check_circle.svg" alt="Verified Icon" class="w-4 h-4">
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Floating card 1 -->
+                            <div class="flex flex-col gap-4">
+                                <div class="floating-card floating-one">
+                                    <div class="floating-icon">
+                                        <img src="src/images/trust-verified.svg" alt="Verified Icon" class="w-6 h-6">
+                                    </div>
+                                    <div>
+                                        <p class="text-[14px] leading-3.5 font-bold text-[#162344] whitespace-nowrap">
+                                            Trust, verified
+                                        </p>
+                                        <p class="text-[10px] text-[#626468] whitespace-nowrap">
+                                            Every detail matters
                                         </p>
                                     </div>
-
                                 </div>
-
-                                <div class="text-[#20A957] whitespace-nowrap">
-                                    <span class="text-[22px] font-bold">98</span><span
-                                        class="text-[12px] font-semibold text-[#162344]">/100</span>
-                                </div>
-
-                            </div>
-
-                            <!-- Progress -->
-                            <div class="progress-track">
-                                <div class="progress-fill"></div>
-                            </div>
-
-                            <!-- Verification list -->
-                            <div class="mt-4.5 space-y-3.5">
-                                <!-- Item 1 -->
-                                <div class="flex items-center justify-between">
-                                    <div class="flex items-center gap-3">
-                                        <img src="src/images/identity-check.svg" alt="Identity Check Icon"
-                                            class="w-[22px] h-[22px]">
-                                        <span class="text-sm font-medium text-[#4A6297]">
-                                            Identity Check
-                                        </span>
+                                 <div class="floating-card floating-one">
+                                    <div class="floating-icon">
+                                        <img src="src/images/clear-insight.svg" alt="Verified Icon" class="w-6 h-6">
                                     </div>
-
-                                    <span class="relative">
-                                        <img src="src/images/check_circle.svg" alt="Verified Icon" class="w-4 h-4">
-                                    </span>
-                                </div>
-
-                                <!-- Item 2 -->
-                                <div class="flex items-center justify-between">
-                                    <div class="flex items-center gap-3">
-                                        <img src="src/images/education-check.svg"
-                                            alt="Education & Employment Checks Icon" class="w-[22px] h-[22px]">
-                                        <span class="text-sm font-medium text-[#4A6297]">
-                                            Education & Employment Checks
-                                        </span>
+                                    <div class="text-left">
+                                        <p class="text-[14px] leading-3.5 font-bold text-[#162344] whitespace-nowrap">
+                                            Clear insights
+                                        </p>
+                                        <p class="text-[10px] text-[#626468] whitespace-nowrap">
+                                            Clear insights
+                                        </p>
                                     </div>
-
-                                    <span class="relative">
-                                        <img src="src/images/check_circle.svg" alt="Verified Icon" class="w-4 h-4">
-                                    </span>
                                 </div>
-
-                                <!-- Item 3 -->
-
-                                <div class="flex items-center justify-between">
-                                    <div class="flex items-center gap-3">
-                                        <img src="src/images/criminal-check.svg"
-                                            alt="Criminal Background Checks Icon" class="w-[22px] h-[22px]">
-                                        <span class="text-sm font-medium text-[#4A6297]">
-                                            Criminal Background Checks
-                                        </span>
-                                    </div>
-
-                                    <span class="relative">
-                                        <img src="src/images/check_circle.svg" alt="Verified Icon" class="w-4 h-4">
-                                    </span>
-                                </div>                            </div>
-
-                        </div>
-
-                        <!-- Floating card 1 -->
-                        <div class="floating-card floating-one">
-                            <div class="floating-icon">
-                                <img src="src/images/trust-verified.svg" alt="Verified Icon" class="w-6 h-6">
-                            </div>
-                            <div>
-                                <p class="text-[14px] leading-3.5 font-bold text-[#162344] whitespace-nowrap">
-                                    Trust, verified
-                                </p>
-                                <p class="text-[10px] text-[#626468] whitespace-nowrap">
-                                    Every detail matters
-                                </p>
                             </div>
                         </div>
 
